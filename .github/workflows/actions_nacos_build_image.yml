@@ -146,11 +146,11 @@ jobs:
           echo '=====开始上传mogu_web====='
           docker push dwwx1995/mogu_web
 
-          echo '=====开始上传vue_mogu_admin====='
-          docker push dwwx1995/vue_mogu_admin
-
-          echo '=====开始上传vue_mogu_web====='
-          docker push dwwx1995/vue_mogu_web
+#          echo '=====开始上传vue_mogu_admin====='
+#          docker push dwwx1995/vue_mogu_admin
+#
+#          echo '=====开始上传vue_mogu_web====='
+#          docker push dwwx1995/vue_mogu_web
 
           echo '=====镜像上传结束====='
 
