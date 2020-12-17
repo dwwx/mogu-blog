@@ -96,21 +96,21 @@ jobs:
 
           echo '=====镜像构建结束====='
 
-      # 构建镜像，指定镜像名
-      - name: Build Vue Docker Images
-        run: |
-
-          echo '=====开始构建镜像====='
-          echo '=====开始构建vue_mogu_admin====='
-          cd vue_mogu_admin
-          docker build -t dwwx1995/vue_mogu_admin .
-          cd ..
-
-          cd vue_mogu_web
-          docker build -t dwwx1995/vue_mogu_web .
-          cd ..
-
-          echo '=====镜像构建结束====='
+#      # 构建镜像，指定镜像名
+#      - name: Build Vue Docker Images
+#        run: |
+#
+#          echo '=====开始构建镜像====='
+#          echo '=====开始构建vue_mogu_admin====='
+#          cd vue_mogu_admin
+#          docker build -t dwwx1995/vue_mogu_admin .
+#          cd ..
+#
+#          cd vue_mogu_web
+#          docker build -t dwwx1995/vue_mogu_web .
+#          cd ..
+#
+#          echo '=====镜像构建结束====='
 
       # 登录到 DockerHub镜像服务，使用 GitHub secrets 传入账号密码，密码被加密存储在 GitHub 服务器
       - name: Login to DockerHub
